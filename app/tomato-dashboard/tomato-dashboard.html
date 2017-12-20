@@ -1,0 +1,24 @@
+<section class="container-fluid">
+    <tomato-loading-indicator 
+      ng-if="vm.loading" 
+      text="Fetching tomato data..."
+    />
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <tomato-chart 
+              ng-if="!vm.loading" 
+              data="vm.tomatoes" 
+              type="Bar" 
+              header="Tomato Yield by Season"
+              horizontal-axis-label="Seasons"
+              vertical-axis-label="Ounces"
+            />
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <!-- Add tomato chart directive -->
+        </div>
+    </div>
+</section>
+
+<!-- Add tomato grid directive -->

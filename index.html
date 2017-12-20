@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Big Tomato Sauce Co. | EY Devs | Intermediate Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- JQuery scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- AngularJS scripts -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- UI-Bootstrap -->
+    <script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+    <!-- Pagination -->
+    <script src="../node_modules/angular-utils-pagination/dirPagination.js"></script>
+
+    <!-- Angular Charts -->
+    <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="../node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+    
+    <!-- Lodash scripts -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.8.2/lodash.min.js"></script>
+
+    <!-- App setup & config -->
+	<script type="text/javascript" src="./app/app.module.js"></script>
+	<script type="text/javascript" src="./app/app.config.js"></script>
+
+    <!-- Allow Promise in IE -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+
+	<!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	
+	<!-- Custom Stylesheets -->
+	<link rel="stylesheet" href="./app/assets/stylesheets/main.css" />
+
+    <!-- Features -->
+    <script type="text/javascript" src="./app/tomato-dashboard/tomato-dashboard.controller.js"></script>
+    <script type="text/javascript" src="./app/tomato-dashboard/tomato-dashboard.routes.js"></script>
+
+    <!-- Shared Components -->
+    <script type="text/javascript" src="./app/shared-components/tomato-navigation/tomato-navigation.directive.js"></script>
+    <script type="text/javascript" src="./app/shared-components/tomato-chart/tomato-chart.directive.js"></script>
+    <script type="text/javascript" src="./app/shared-components/tomato-chart/tomato-chart.service.js"></script>
+    <script type="text/javascript" src="./app/shared-components/tomato-card/tomato-card.directive.js"></script>
+    <script type="text/javascript" src="./app/shared-components/tomato-grid/tomato-grid.directive.js"></script>
+    <script type="text/javascript" src="./app/shared-components/tomato-grid/tomato-grid.service.js"></script>
+    <script type="text/javascript" src="./app/shared-components/tomato-loading-indicator/tomato-loading-indicator.directive.js"></script>
+
+    <!-- Services -->
+    <script type="text/javascript" src="./app/shared-services/rest.service.js"></script>
+    <script type="text/javascript" src="./app/shared-services/mock.service.js"></script>
+</head>
+<body ng-app="app">    
+    <tomato-navigation></tomato-navigation>
+    <div ng-view></div>
+</body>
+</html>
